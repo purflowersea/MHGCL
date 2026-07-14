@@ -53,15 +53,15 @@ def init_args(user_args=None):
     parser.add_argument("--dropout", type=float, default=0.2)
     
     # 模态权重参数
-    parser.add_argument('--knowledge_weight', type=float, default=0.37,
+    parser.add_argument('--knowledge_weight', type=float, default=0.25,
                         help='Weight for knowledge graph modality')
-    parser.add_argument('--molecular_weight', type=float, default=0.30,
+    parser.add_argument('--molecular_weight', type=float, default=0.25,
                         help='Weight for molecular graph modality')
-    parser.add_argument('--smiles_weight', type=float, default=0.15,
+    parser.add_argument('--smiles_weight', type=float, default=0.25,
                         help='Weight for SMILES sequence modality')
-    parser.add_argument('--target_weight', type=float, default=0.18,
+    parser.add_argument('--target_weight', type=float, default=0.25,
                         help='Weight for target information modality')
-    parser.add_argument('--fixed_weights', action='store_false',
+    parser.add_argument('--fixed_weights', action='store_true',
                         help='Use fixed weights instead of dynamic weights for modality fusion')
     
 
